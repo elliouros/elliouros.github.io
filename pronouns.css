@@ -13,4 +13,7 @@
 into binary trees. this may or may not be my magnum opus in webdev. */
 .bflex > * {
   flex-grow: 1;
+  &:not(.bflex) {
+    padding: 0 16px;
+  }
 }
