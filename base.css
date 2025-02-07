@@ -4,11 +4,14 @@ body {
   font-family: "Consolas", "Courier New", monospace;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+:link {
+    color: #23cec0;
 }
+
+:visited {
+    color: #266bba;
+}
+
 .flex, .bflex {
   display: flex;
   flex-direction: row;
