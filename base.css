@@ -3,3 +3,19 @@ body {
   color: whitesmoke;
   font-family: "Consolas", "Courier New", monospace;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header > a {
+  float: left;
+  padding: 4px 6px;
+}
