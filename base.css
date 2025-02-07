@@ -9,7 +9,7 @@ body {
   clear: both;
   display: table;
 }
-.flex {
+.flex, .bflex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

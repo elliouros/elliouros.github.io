@@ -2,18 +2,15 @@
   margin-top: 6px;
   & > div {
     width: 100%;
-    & > div {
-      flex-grow: 1;
-      min-width: 25%;
-    }
   }
-  /*
-  h3 {
-    margin: 4px 0;
-  }
-  */
   ul {
     list-style-type: none;
     padding: 0 16px;
   }
+}
+
+/* "bflex" means binary flex, in that it effectively turns lists of elements
+into binary trees. this may or may not be my magnum opus in webdev. */
+.bflex > * {
+  flex-grow: 1;
 }
