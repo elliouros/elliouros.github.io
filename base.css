@@ -18,6 +18,15 @@ body {
   flex-wrap: wrap;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+  border: 1px solid white;
+}
 header > a {
   float: left;
   padding: 4px 6px;
