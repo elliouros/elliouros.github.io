@@ -1,5 +1,5 @@
 body {
-  background-color: #0D1117;
+  background-color: #0e1219;
   color: whitesmoke;
   font-family: "Consolas", "Courier New", monospace;
 }
@@ -18,16 +18,13 @@ body {
   flex-wrap: wrap;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-header {
+nav {
+  display: flex;
   border: 1px solid white;
 }
-header > a {
-  float: left;
+nav > a {
   padding: 4px 6px;
+  &:hover {
+    background-color: #2f3033;
+  }
 }
