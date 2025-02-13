@@ -23,8 +23,11 @@ nav {
   border: 1px solid white;
 }
 nav > a {
-  padding: 4px 6px;
+  padding: 6px 8px;
   &:hover {
     background-color: #2f3033;
   }
+}
+nav > div {
+  flex-grow: 1;
 }
