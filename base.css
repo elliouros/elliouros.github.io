@@ -9,8 +9,12 @@ body {
   margin: 0;
 }
 
-#main {
+.body-margin {
   margin: 8px;
+}
+
+p.extra-margin {
+  margin-block-end: 2em;
 }
 
 :link {
@@ -37,13 +41,16 @@ body {
 .sr-only {
   overflow: hidden;
   height: 0;
+  width: 0;
+  padding: 0;
   margin: 0;
+  border: 0 solid transparent;
 }
 
 nav {
   display: flex;
   padding: 8px;
-  border: 2px solid #141a24;
+  border: 3px solid #141a24;
   border-radius: 6px;
   > a {
     padding: 6px 8px;

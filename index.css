@@ -14,3 +14,19 @@ header {
     z-index: -1;
   }
 }
+
+#more-info + div {
+  display: flex;
+  flex-wrap: wrap;
+  > * {
+    flex-grow: 1;
+    flex-basis: 1px;
+    /* ensures that all elements have equal width. awful.*/
+    border: 2px solid #141a24;
+    border-radius: 6px;
+    padding: 10px;
+    > div {
+      padding: 5px;
+    }
+  }
+}
