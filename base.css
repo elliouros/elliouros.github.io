@@ -1,4 +1,4 @@
-* {
+*:not(.border-box-override) {
   box-sizing: border-box;
 }
 
@@ -21,10 +21,17 @@ body {
     color: #266bba;
 }
 
-.flex, .bflex {
+.flex {
   display: flex;
-  flex-direction: row;
+}
+.bflex {
+  display: flex;
   flex-wrap: wrap;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sr-only {
@@ -38,17 +45,17 @@ nav {
   padding: 8px;
   border: 2px solid #141a24;
   border-radius: 6px;
-}
-nav > a {
-  padding: 6px 8px;
-  border: 1px solid darkgrey;
-  &:not(:first-child):not(div + *) {
-    border-left: 0;
+  > a {
+    padding: 6px 8px;
+    border: 1px solid darkgrey;
+    &:not(:first-child):not(div + *) {
+      border-left: 0;
+    }
+    &:hover {
+      background-color: #2f3033;
+    }
   }
-  &:hover {
-    background-color: #2f3033;
+  > div {
+    flex-grow: 1;
   }
-}
-nav > div {
-  flex-grow: 1;
 }
