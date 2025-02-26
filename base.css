@@ -17,6 +17,10 @@ p.extra-margin {
   margin-block-end: 2em;
 }
 
+.pre-line {
+  white-space: pre-line;
+}
+
 :link {
     color: #23cec0;
 }

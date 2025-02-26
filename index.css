@@ -15,13 +15,22 @@ header {
   }
 }
 
-#more-info + div {
+hgroup {
+  margin-block: 1.33em;
+  * {
+    margin: 0;
+    font-weight: bold; 
+  }
+}
+
+.details {
   display: flex;
   flex-wrap: wrap;
   > * {
     flex-grow: 1;
-    flex-basis: 1px;
-    /* ensures that all elements have equal width. awful.*/
+    flex-basis: 0px;
+    /* ensures that all elements have equal width. questionable.*/
+    min-width: 30%;
     border: 2px solid #141a24;
     border-radius: 6px;
     padding: 10px;
