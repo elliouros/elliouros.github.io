@@ -13,7 +13,7 @@
     }
     &.good {
       color: #ff63cb;
-      font-weight: 700;
+      font-weight: bold;
       font-style: italic;
       &::before {
         /* content: ""; */
@@ -39,14 +39,5 @@
         /* content: ""; */
       }
     }
-  }
-}
-
-/* "bflex" means binary flex, in that it effectively turns lists of elements
-into binary trees. this may or may not be my magnum opus in webdev. */
-.bflex > * {
-  flex-grow: 1;
-  &:not(.bflex) {
-    padding: 0 16px;
   }
 }
