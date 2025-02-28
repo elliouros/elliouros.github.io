@@ -56,23 +56,3 @@ p.extra-margin {
   margin: 0;
   border: 0 solid transparent;
 }
-
-nav {
-  display: flex;
-  padding: 8px;
-  border: 3px solid #141a24;
-  border-radius: 6px;
-  > a {
-    padding: 6px 8px;
-    border: 1px solid darkgrey;
-    &:not(:first-child):not(div + *) {
-      border-left: 0;
-    }
-    &:hover {
-      background-color: #2f3033;
-    }
-  }
-  > div {
-    flex-grow: 1;
-  }
-}

@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/style/base.css">
+  {% for slug in page.style %}
+  <link rel="stylesheet" href="/style/{{ slug }}.css">
+  {% endfor %}
+  {% if page.style-internal %}
   <style>
-  {{ page.style }}
-  {% comment %}
-  maybe delete this later....
-  {% endcomment %}
+  {{ page.style-internal }}
   </style>
+  {% endif %}
 </head>
 
 <body>

@@ -5,10 +5,6 @@ title: online!
 summary: ellie's journey into webbing a site
 hidden: true
 # because unfinished
+style: base
 ---
-So I had a thought.
-# What if I made my own website?
-and so.
-## I made my own website!
-hello world!
 
