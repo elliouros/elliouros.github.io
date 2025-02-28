@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/style/base.css">
+  <style>
+  {{ page.style }}
+  {% comment %}
+  maybe delete this later....
+  {% endcomment %}
+  </style>
+</head>
+
+<body>
+{% comment %}
+back to index goes here
+{% endcomment %}
+<div class="body-margin">
+
+{{ content }}
+
+</div>
+</body>
+</html>

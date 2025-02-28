@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/style/base.css">
+  {% for slug in page.style %}
+  <link rel="stylesheet" href="/style/{{ slug }}.css">
+  {% endfor %}
+</head>
+
+<body>
+<div class="body-margin">
+
+{% include navbar.html %}
+
+{{ content }}
+
+</div>
+
+{% comment %}
+{% include footer.html %}
+footer.html doesn't exist yet. maybe someday
+{% endcomment %}
+
+</body>
+</html>

@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>ellie blog</title>
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="blog.css">
-</head>
-
-<body>
-<div class="body-margin">
-
-<nav>
-  <a href="index.html">home</a>
-  <a href="pronouns.html">pronouns</a>
-  <a href="blog.html">blog</a>
-  <div></div>
-  <a href="https://github.com/elliouros">github</a>
-</nav>
-
+---
+title: blog
+layout: page
+style: blog
+---
 <h1>blog</h1>
 <p>Want to know what I'm working on? What ephemeral new interest I'm on? this
 is the place. I hope to post what I feel on here, a sort of journal that I can
 write into every now and again.</p>
 
 <div id=blog>
+  <!--
   <header>
     <h2>Entries</h2>
     <div></div>
@@ -30,9 +17,28 @@ write into every now and again.</p>
     <button></button>
     <button></button>
   </header>
+  -->
   <div>  
+    {% for post in site.blog %}
+    {% unless post.hidden %}
+    <a href="{{ post.url }}">
+      {% if post.img %}
+      <img src="/assets/{{ post.img }}">
+      {% endif %}
+      <h3>
+      {% if post.ititle %}
+        {{ post.ititle }}
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+      </h3>
+      <p>{{ post.summary }}</p>
+    </a>
+    {% endunless %}
+    {% endfor %}
+    <!--
     <a href="blogs/site.html">
-      <img src="relayouter.png">
+      <img src="/relayouter.png">
       <h3>online!</h3>
       <p>ellie's journey into webbing a site</p>
     </a>
@@ -40,9 +46,6 @@ write into every now and again.</p>
       <h3>meowmeowmeoaMREOWMAOWmrMREOWWmraowww</h3>
       <p>prrrrrrrrrr meow</p>
     </div>
+    -->
   </div>
 </div>
-
-</div>
-</body>
-</html>

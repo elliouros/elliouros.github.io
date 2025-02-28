@@ -8,36 +8,36 @@
     padding: 0 16px;
   }
   li {
-    &::before {
-      /* font-family: "Font Awesome 5 Pro"; */
-    }
+    /* &::before {
+      font-family: "Font Awesome 5 Pro";
+    } */
     &.good {
       color: #ff63cb;
       font-weight: bold;
       font-style: italic;
-      &::before {
-        /* content: ""; */
-      }
+      /* &::before {
+        content: "";
+      } */
     }
     &.okay {
       color: #a98eda;
-      &::before {
-        /* content: ""; */
-      }
+      /* &::before {
+        content: "";
+      } */
     }
     &.meh {
       color: #9ec5fe;
       font-size: .875em;
-      &::before {
-        /* content: ""; */
-      }
+      /* &::before {
+        content: "";
+      } */
     }
     &.bad {
       color: #adb5bd;
       font-size: .875em;
-      &::before {
-        /* content: ""; */
-      }
+      /* &::before {
+        content: "";
+      } */
     }
   }
 }
