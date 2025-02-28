@@ -9,6 +9,7 @@ collections:
     permalink: /blog/:slug
 
 exclude:
+  - README.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
