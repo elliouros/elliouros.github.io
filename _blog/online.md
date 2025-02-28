@@ -6,9 +6,9 @@ summary: ellie's journey into webbing a site
 hidden: true
 # because unfinished
 ---
-<p>So I had a thought.<p>
-<h1>What if I made my own website?</h1>
-<p>and so.</p>
-<h2>I made my own website!</h2>
-<p>hello world!</p>
+So I had a thought.
+# What if I made my own website?
+and so.
+## I made my own website!
+hello world!
 
