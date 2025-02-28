@@ -1,4 +1,4 @@
-*:not(.border-box-override) {
+* {
   box-sizing: border-box;
 }
 
@@ -7,6 +7,13 @@ body {
   color: whitesmoke;
   font-family: FreeMono, monospace;
   margin: 0;
+}
+
+code {
+  display: inline-block;
+  background-color: #141a24;
+  padding: 4px;
+  border-radius: 6px;
 }
 
 .body-margin {
