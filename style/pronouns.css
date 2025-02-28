@@ -4,40 +4,55 @@
     width: 100%;
   }
   ul {
-    list-style-type: none;
     padding: 0 16px;
   }
-  li {
+}
+
+#key {
+  padding: 0;
+  display: flex;
+  * {
+    border-right: 1px solid #141a24;
+    border-left: 1px solid #141a24;
+    flex-grow: 1;
+    flex-basis: 0px;
+    text-align: center;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  /* &::before {
+    font-family: "Font Awesome 5 Pro";
+  } */
+  &.good {
+    color: #ff63cb;
+    font-weight: bold;
+    font-style: italic;
     /* &::before {
-      font-family: "Font Awesome 5 Pro";
+      content: "";
     } */
-    &.good {
-      color: #ff63cb;
-      font-weight: bold;
-      font-style: italic;
-      /* &::before {
-        content: "";
-      } */
-    }
-    &.okay {
-      color: #a98eda;
-      /* &::before {
-        content: "";
-      } */
-    }
-    &.meh {
-      color: #9ec5fe;
-      font-size: .875em;
-      /* &::before {
-        content: "";
-      } */
-    }
-    &.bad {
-      color: #adb5bd;
-      font-size: .875em;
-      /* &::before {
-        content: "";
-      } */
-    }
+  }
+  &.okay {
+    color: #a98eda;
+    /* &::before {
+      content: "";
+    } */
+  }
+  &.meh {
+    color: #9ec5fe;
+    font-size: .875em;
+    /* &::before {
+      content: "";
+    } */
+  }
+  &.bad {
+    color: #adb5bd;
+    font-size: .875em;
+    /* &::before {
+      content: "";
+    } */
   }
 }
