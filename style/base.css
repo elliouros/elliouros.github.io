@@ -16,6 +16,11 @@ code {
   border-radius: 6px;
 }
 
+sub {
+  font-size: x-small;
+  color: darkgray;
+}
+
 .body-margin {
   margin: 8px;
 }
