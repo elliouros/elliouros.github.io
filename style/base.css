@@ -17,7 +17,7 @@ code {
 }
 
 sub {
-  font-size: x-small;
+  font-size: smaller;
   color: darkgray;
 }
 

@@ -1,0 +1,51 @@
+---
+title: pet the kitty
+layout: page
+style:
+  - base
+  - contact
+---
+<h1>contact</h1>
+
+<p>
+  If you're on this site, you probably already know how to contact me somehow.
+  If you don't, well, this is where you find out.
+</p><p>
+  Any platform not featured below is not featured for a reason, be it i)
+  I don't have it, ii) I don't want to use it, or iii) I don't want people to
+  know it. ask about them, unless it's:
+</p>
+<ul>
+  <li><b>email: </b>The format is only good for workflow and verification
+  anymore, if even that</li>
+  <li><b>Twitter & similar: </b>Historically awful, and I generally dislike
+  the format
+</ul>
+
+<h2 class="sr-only">links</h2>
+<div id="links">
+  {% comment %}
+  extremely unnecessary jekyll abuse incoming geronimoooooo
+  TODO: add icons, style them
+  {% endcomment %}
+  {% for link in site.data.links %}
+  {% if link.link %}
+  <a href="{{ link.link }}" target="_blank">
+  {% else %}
+  <div>
+  {% endif %}
+    {% if link.img %}
+    <img src="{{ link.img }}">
+    {% endif %}
+    <h3>
+      {{ link.title }}
+    </h3>
+    <p>{{ link.value }}</p>
+  {% if link.link %}
+  </a>
+  {% else %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+

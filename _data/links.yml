@@ -1,0 +1,24 @@
+# - title:
+#   value:
+#   link:
+#   img:
+
+# TODO: add icons/imgs
+
+- title: matrix
+  value: "@elliouros:waffle.tech"
+
+- title: discord
+  value: elliouros
+
+- title: youtube
+  value: "@elliouros"
+  link: https://youtube.com/@elliouros
+
+- title: tumblr
+  value: elliouros
+  link: https://elliouros.tumblr.com
+
+- title: github
+  value: elliouros
+  link: https://github.com/elliouros
