@@ -28,6 +28,7 @@
     gap: 8px;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: scroll;
     > a {
       border-color: #15263f;
       transition: border-color 0.2s;
@@ -39,14 +40,14 @@
       text-decoration: inherit;
       color: inherit;
       min-height: 100px;
-      min-width: max(40%, 400px);
+      min-width: max(40%, min(400px, 100%));
       /* any percent in (33.4%, 50%) works */
       padding: 8px;
-      border: 2px solid;
-      border-color: #141a23;
+      border: 2px solid #141a23;
       border-radius: 6px;
       flex-grow: 1;
       flex-basis: 0px;
+      word-break: break-all;
       > img {
         height: 80px;
         width: 80px;
