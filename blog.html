@@ -9,41 +9,28 @@ style:
 
 <h2 class="sr-only">posts</h2>
 <div id=blog>
-  <!--
-  <header>
-    <h2>Entries</h2>
-    <div></div>
-    <button></button>
-  </header>
-  -->
+  <aside>
+    {% for tag in site.tags %}
+    <details>
+      <summary>{{ tag[0] }}</summary>
+      {% for post in tag[1] %}
+      <a href="{{ post.url }}">{{ post.ititle | default: post.title }}</a>
+      {% endfor %}
+    </details>
+    {% endfor %}
+  </aside>
   <div>  
-    {% for post in site.blog %}
+    {% for post in site.posts %}
     {% unless post.hidden %}
     <a href="{{ post.url }}">
       {% if post.img %}
       <img src="/assets/{{ post.img }}">
       {% endif %}
-      <h3>
-      {% if post.ititle %}
-        {{ post.ititle }}
-      {% else %}
-        {{ post.title }}
-      {% endif %}
+      <h3>{{ post.ititle | default: post.title }}
       </h3>
-      <p class="pre-line">{{ post.summary }}</p>
+      <p class="pre-line">{% if post.summary %}{{ post.summary }}{% endif %}</p>
     </a>
     {% endunless %}
     {% endfor %}
-    <!--
-    <a href="blogs/site.html">
-      <img src="/relayouter.png">
-      <h3>online!</h3>
-      <p>ellie's journey into webbing a site</p>
-    </a>
-    <div>
-      <h3>meowmeowmeoaMREOWMAOWmrMREOWWmraowww</h3>
-      <p>prrrrrrrrrr meow</p>
-    </div>
-    -->
   </div>
 </div>

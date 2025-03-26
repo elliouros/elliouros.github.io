@@ -1,26 +1,24 @@
+@media (max-width: 600px) {
+  #blog {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 #blog {
   margin: 4px;
   border: 2px solid #141a24;
   border-radius: 8px;
-  > header {
-    box-sizing: content-box;
-    width: 100%;
-    height: 2em;
-    border-bottom: 1px solid white;
-    display: flex;
-    align-items: center;
-    > h2 {
-      margin: 0;
-      padding: 0 12px;
-      font-weight: normal;
-      font-size: medium;
-    }
-    > div {
-      flex-grow: 1;
-    }
-    > button {
-      height:100%;
-      aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  overflow-x: auto;
+  > aside {
+    background-color: #121821;
+    border-radius: 6px;
+    overflow: hidden;
+    > details {
+      padding: 16px;
+      /* word-break: break-all; */
+      box-shadow: #0e1219 0px -16px 12px -8px inset;
     }
   }
   > div {
@@ -28,7 +26,6 @@
     gap: 8px;
     display: flex;
     flex-wrap: wrap;
-    overflow-x: scroll;
     > a {
       border-color: #15263f;
       transition: border-color 0.2s;
@@ -47,7 +44,7 @@
       border-radius: 6px;
       flex-grow: 1;
       flex-basis: 0px;
-      word-break: break-all;
+      /* word-break: break-all; */
       > img {
         height: 80px;
         width: 80px;
@@ -57,7 +54,7 @@
       }
       > * {
         margin: 0;
-        word-wrap: break-word;
+        /* word-wrap: break-all; */
       }
     }
   }
