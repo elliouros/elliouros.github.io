@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>{{ page.title }}</title>
+  <link rel="icon" href="/assets/smug-favi.png">
   <link rel="stylesheet" href="/style/navbar.css">
   {% for slug in page.style %}
   <link rel="stylesheet" href="/style/{{ slug }}.css">
@@ -22,10 +23,7 @@
 
 </div>
 
-{% comment %}
 {% include footer.html %}
-footer.html doesn't exist yet. maybe someday
-{% endcomment %}
 
 </body>
 </html>
