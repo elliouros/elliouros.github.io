@@ -45,16 +45,7 @@ p.extra-margin {
 .flex {
   display: flex;
 }
-.bflex {
-  display: flex;
-  flex-wrap: wrap;
-  > * {
-    flex-grow: 1;
-    &:not(.bflex) {
-      padding: 0 16px;
-    }
-  }
-}
+
 .center-flex {
   display: flex;
   justify-content: center;
