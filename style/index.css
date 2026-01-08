@@ -68,6 +68,7 @@ details > ul {
     > * {
       aspect-ratio: 88 / 31;
       vertical-align: middle;
+      image-rendering: pixelated;
       font-size: 0;
       line-height: 0;
     }
