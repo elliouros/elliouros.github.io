@@ -46,6 +46,11 @@ hgroup {
     }
   }
 }
+
+details > div > p:first-child {
+  margin-top: 0px;
+}
+
 details > ul {
   padding: 0;
   margin: 8px 0;

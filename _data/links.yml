@@ -5,8 +5,17 @@
 
 # TODO: add icons/imgs
 
-- title: matrix
-  value: "@elliouros:waffle.tech"
+# # inactive
+# - title: matrix
+#   value: "@elliouros:waffle.tech"
+
+- title: github
+  value: elliouros
+  link: https://github.com/elliouros
+
+- title: git.gay
+  value: elliouros
+  link: https://git.gay/elliouros
 
 - title: discord
   value: elliouros
@@ -18,7 +27,3 @@
 - title: tumblr
   value: elliouros
   link: https://elliouros.tumblr.com
-
-- title: github
-  value: elliouros
-  link: https://github.com/elliouros
